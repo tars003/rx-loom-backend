@@ -45,10 +45,6 @@ var obs1 = Observable.create((obs) => {
 
 var obsFunc2 ;
 var obs2 = Observable.create((obs) => {
-    // setInterval(() => {
-    //     console.log('Received data from ESP32 2');
-    //     obs.next(`Data2: ${Math.floor(Math.random()*(999-100+1)+100)}`);
-    // }, 3000);
     obsFunc2  = (data) => {
         console.log('Inside Observable 2');
         obs.next(data);
