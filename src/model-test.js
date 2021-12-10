@@ -1,4 +1,4 @@
-const { Observable, interval, withLatestFrom } = require("rxjs");
+const { Observable, interval, withLatestFrom, combineLatest } = require("rxjs");
 const express = require('express');
 const http = require('http');
 const app = express();
@@ -65,8 +65,6 @@ client.on('connect', () => {
 var observables = [];
 var obsFunctions = [];
 var observer;
-var resultObservable;
-var subscription;
 
 var stations, zones;
 
@@ -99,14 +97,14 @@ var stations, zones;
         }
     }
 
-    for (let i = 1; i < stations.length; i++) {
-        if (i == 1)
-            resultObservable = observables[i].pipe(withLatestFrom(observables[i - 1]));
-        else
-            resultObservable = observables[i].pipe(withLatestFrom(resultObservable));
-    }
+    // for (let i = 1; i < stations.length; i++) {
+    //     if (i == 1)
+    //         resultObservable = observables[i].pipe(withLatestFrom(observables[i - 1]));
+    //     else
+    //         resultObservable = observables[i].pipe(withLatestFrom(resultObservable));
+    // }
 
-    subscription = resultObservable.subscribe(observer);
+    // subscription = resultObservable.subscribe(observer);
 
 })();
 
@@ -118,32 +116,45 @@ client.on('message', async (topic, payload) => {
 
     if (data.tags.length > 0) {
 
-        switch (topic) {
-            case topics[0]:
-                obsFunctions[0](data);
+        for (let i = 0; i < topics.length; i++) {
+            if(topic == topics[i]) {
+                obsFunctions[i](data);
                 break;
-            case topics[1]:
-                obsFunctions[1](data);
-                break;
-            case topics[2]:
-                obsFunctions[2](data);
-                break;
-            case topics[3]:
-                obsFunctions[3](data);
-                break;
-            case topics[4]:
-                obsFunctions[4](data);
-                break;
-            case topics[5]:
-                obsFunctions[5](data);
-                break;
+            }
         }
+
+        // switch (topic) {
+        //     case topics[0]:
+        //         obsFunctions[0](data);
+        //         break;
+        //     case topics[1]:
+        //         obsFunctions[1](data);
+        //         break;
+        //     case topics[2]:
+        //         obsFunctions[2](data);
+        //         break;
+        //     case topics[3]:
+        //         obsFunctions[3](data);
+        //         break;
+        //     case topics[4]:
+        //         obsFunctions[4](data);
+        //         break;
+        //     case topics[5]:
+        //         obsFunctions[5](data);
+        //         break;
+        // }
 
     } else {
         console.log(`no tags found by station  :${stationId}`);
     }
 
 });
+
+let combinedObs = combineLatest(observables);
+let intObs = interval(20000);
+let resultObs = interval.pipe(withLatestFrom(combinedObs));
+let subscription = resultObs.subscribe(observer);
+
 
 
 
@@ -186,9 +197,7 @@ server.listen(process.env.PORT || 3000, () => {
 
 
 // let flag = 0;
-// const int1 = setInterval(() => {
-//     obsFunc1(`Data1: ${Math.floor(Math.random()*(999-100+1)+100)}`);
-// }, 3000);
+// const int1 = setInterval(() => { 
 
 // const int2 = setInterval(() => {
 //     obsFunc2(`Data2: ${Math.floor(Math.random()*(999-100+1)+100)}`);
