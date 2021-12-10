@@ -174,19 +174,23 @@ const processResult = async (obsArray) => {
             tagObjs[tagIds.indexOf(tag["tagId"])][obsData['stationId']] = tag['rssi'];
         });
     }
-    let apiRequests = [];
-    for (let i = 0; i < tagObjs.length; i++) {
-        apiRequests.push(axios.post('http://localhost:5000/return_zone', tagObjs[i]));
-    }
 
-    Promise.all(apiRequests)
-        .then((zones) => {
-            zones.map((zone, i) => {
-                console.log(`Response received from Model API for : ${tagIds[i]} tag => ${zone}`);
-            })
-        })
+    console.log('TAG GROUPED DATA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+    console.log(tagObjs);
 
-    return tagObjs;
+    // let apiRequests = [];
+    // for (let i = 0; i < tagObjs.length; i++) {
+    //     apiRequests.push(axios.post('http://localhost:5000/return_zone', tagObjs[i]));
+    // }
+
+    // Promise.all(apiRequests)
+    //     .then((zones) => {
+    //         zones.map((zone, i) => {
+    //             console.log(`Response received from Model API for : ${tagIds[i]} tag => ${zone}`);
+    //         })
+    //     })
+
+    // return tagObjs;
 }
 
 
