@@ -7,7 +7,7 @@ const Runningshift = mongoose.Schema({
         {
             _id: String,          // emp id
             name: String,
-            stationId: String,
+            zoneName: String,
             activeTime: Number,
             awayTime: Number,
             idealTime: Number,

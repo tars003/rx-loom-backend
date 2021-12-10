@@ -3,12 +3,14 @@ const express = require('express');
 const http = require('http');
 const app = express();
 const server = http.createServer(app);
+const axios = require('axios');
 
 const Zone = require('../models/Zone.model');
 const Station = require('../models/Station.model');
 const RunningShift = require('../models/RunningShift.model');
 const Shift = require('../models/Shift.model');
 const Employee = require('../models/Employee.model');
+const { stationTagMap, tagObj } = require('../utils/constants');
 
 var mqtt = require('mqtt');
 const { reportLiveStatus } = require("../utils/esp32.util");
@@ -33,6 +35,22 @@ const topics = [
     '/nodejs/mqtt/2',
     '/nodejs/mqtt/3',
     '/nodejs/mqtt/4',
+    '/nodejs/mqtt/5',
+    '/nodejs/mqtt/6',
+    '/nodejs/mqtt/7',
+    '/nodejs/mqtt/8',
+    '/nodejs/mqtt/9',
+    '/nodejs/mqtt/10',
+    '/nodejs/mqtt/1.1',
+    '/nodejs/mqtt/2.1',
+    '/nodejs/mqtt/3.1',
+    '/nodejs/mqtt/4.1',
+    '/nodejs/mqtt/5.1',
+    '/nodejs/mqtt/6.1',
+    '/nodejs/mqtt/7.1',
+    '/nodejs/mqtt/8.1',
+    '/nodejs/mqtt/9.1',
+    '/nodejs/mqtt/10.1',
 ]
 
 client.on('connect', () => {
@@ -46,9 +64,9 @@ client.on('connect', () => {
 
 var observables = [];
 var obsFunctions = [];
-var observers = [];
-var results = [];
-var subscriptions = [];
+var observer;
+var resultObservable;
+var subscription;
 
 var stations, zones;
 
@@ -65,43 +83,31 @@ var stations, zones;
     }
 })();
 
+// CREATING OBSERVER AND RESULTANT OBSERVABLE
 (async () => {
-    // CREATING 10 OBSERVERS FOR 10 ZONES
-    // FINDING 2 STATIONS AND SUBSCRIBING TO THEIR OPERATED RESULT
-    zones = await Zone.find();
-    for (let i = 0; i < zones.length; i++) {
-        const zone = zones[i];
-        var station1Index = -1, station2Index = -1;
+    // CREATING 1 OBSERVER FOR GETTING 20 DATA FROM 20 STATIONS
+    observer = {
+        next: (value) => {
+            console.log("Inside OBSERVER !!");
+            console.log(value);
+            const tagObjs = processResult(value);
 
-        observers[i] = {
-            next: (value) => {
-                console.log('Inside observer1 next');
-                console.log(value);
-                processResult(value, i);
-            },
-            error: (err) => {
-                console.log(err);
-            }
-        }
-
-        // FINDING STATION1 & STATION2 INDEX FOR CREATING RESULTANT OBSERVABLE
-        for (let j = 0; j < stations.length; i++) {
-            let station = stations[i];
-            if (station.id == zone['station1']) station1Index = i;
-            else if (station.id == zone['station2']) station2Index = i;
-        }
-        
-        // THERE IS PROBLEM IN FINDING STATION 1 & 2 IN STATION COLLECTION
-        if(station1Index == -1 || station2Index == -1) {
-            console.log('THERE IS PROBLEM IN FINDING STATION 1 & 2 IN STATION COLLECTION');
-            console.log('station1Index', station1Index)
-            console.log('station2Index', station2Index)
-        }
-        else {
-            results[i] = observables[station2Index].pipe(withLatestFrom(observables[station1Index]));
-            subscriptions[i] = results[i].subscribe(observers[i]);
+        },
+        error: (err) => {
+            console.log('Inside err function !!');
+            console.log(err);
         }
     }
+
+    for (let i = 1; i < stations.length; i++) {
+        if (i == 1)
+            resultObservable = observables[i].pipe(withLatestFrom(observables[i - 1]));
+        else
+            resultObservable = observables[i].pipe(withLatestFrom(resultObservable));
+    }
+
+    subscription = resultObservable.subscribe(observer);
+
 })();
 
 
@@ -125,6 +131,12 @@ client.on('message', async (topic, payload) => {
             case topics[3]:
                 obsFunctions[3](data);
                 break;
+            case topics[4]:
+                obsFunctions[4](data);
+                break;
+            case topics[5]:
+                obsFunctions[5](data);
+                break;
         }
 
     } else {
@@ -136,48 +148,34 @@ client.on('message', async (topic, payload) => {
 
 
 
-const processResult = async (obsArray, i) => {
-    const obs1 = obsArray[0];
-    const obs2 = obsArray[1];
-    const zone = zones[i];
-    const emp = await Employee.findById(zone['employeeId']);
-    const tagId = emp['tagId'];
-    var rssi;
-
-    let isEmpDetected1 = false;
-    let isEmpDetected2 = false;
-    obs1["tags"].map(ele => {
-        if (ele['tagId'] == tagId) isEmpDetected1 = true;
-    });
-    obs3["tags"].map(ele => {
-        if (ele['tagId'] == tagId) {
-            isEmpDetected2 = true;
-            rssi = ele['rssi'];
-        }
-    });
-
-    // EMP DETECTED IN BOTH SUB STATIONS
-    if (isEmpDetected1 && isEmpDetected2) {
-        const data = {
-            dateTimeString: obs2['time'],
-            zoneName: zone['name'],
-            tagId: tagId,
-            detected: detected,
-            rssi: rssi
-        }
-        console.log('sending data to esp32.util', data);
-        const runningShift = await reportLiveStatus(data);
+const processResult = async (obsArray) => {
+    let tagObjs = [];                           // STORES 20 OBJECTS FOR EACH TAG, TO BE SENT TO FLASK API
+    const tagIds = Object.values(stationTagMap);
+    
+    // CONSTRUCTING EMPTY TAG OBJS
+    for (let i = 0; i < stationTagMap.length; i++) {
+        tagObjs[i] = tagObj;
     }
 
-    // EMP NOT DETECTED IN BOTH SUB STATIONS, THUS NOT DETECTED IN ZONE
-    else if (isEmpDetected1 || isEmpDetected2) {
-        console.log(`Employee ${emp['name']} present in only 1 station`);
-        console.log(`${obs1['stationId']} : ${isEmpDetected1},${obs2['stationId']} : ${isEmpDetected2}`);
+    for (let i = 0; i < obsArray; i++) {
+        const obsData = obsArray[i];
+        obsData['tags'].map(tag => {
+            tagObjs[tagIds.indexOf(tag["tagId"])][obsData['stationId']] = tag['rssi'];
+        });
     }
-    else {
-        console.log(`Employee ${emp['name']} not present in either of stations`);
+    let apiRequests = [];
+    for (let i = 0; i < tagObjs.length; i++) {
+        apiRequests.push(axios.post('http://localhost:5000/return_zone', tagObjs[i]));
     }
 
+    Promise.all(apiRequests)
+        .then((zones) => {
+            zones.map((zone, i) => {
+                console.log(`Response received from Model API for : ${tagIds[i]} tag => ${zone}`);
+            })
+        })
+
+    return tagObjs;
 }
 
 
@@ -217,4 +215,28 @@ server.listen(process.env.PORT || 3000, () => {
 //             "rssi": 40
 //         },
 //     ]
+// }
+
+// OUTGOING MODEL API DATA
+// {
+//     "station1" : "00",
+//     "station2" : "00",
+//     "station3" : "00",
+//     "station4" : "00",
+//     "station5" : "00",
+//     "station6" : "00",
+//     "station7" : "00",
+//     "station8" : "00",
+//     "station9" : "00",
+//     "station10" : "00",
+//     "station1.1" : "00",
+//     "station2.1" : "00",
+//     "station3.1" : "00",
+//     "station4.1" : "00",
+//     "station5.1" : "00",
+//     "station6.1" : "00",
+//     "station7.1" : "00",
+//     "station8.1" : "00",
+//     "station9.1" : "00",
+//     "station10.1" : "00"
 // }
