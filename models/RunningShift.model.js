@@ -14,6 +14,7 @@ const Runningshift = mongoose.Schema({
             reportedTime: String,
             status: Boolean,
             lastRSSI: Number,
+            points: Number
         }
     ]
 });

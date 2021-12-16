@@ -1,0 +1,611 @@
+pi@raspberrypi:~/Desktop/loom-rx/rx-test-backend/rx-loom-backend/src $ node model-test.js 
+tagObj {
+  station1: '-120',
+  station2: '-120',
+  station3: '-120',
+  station4: '-120',
+  station5: '-120',
+  station6: '-120',
+  station7: '-120',
+  station8: '-120',
+  station9: '-120',
+  station10: '-120',
+  'station1.1': '-120',
+  'station2.1': '-120',
+  'station3.1': '-120',
+  'station4.1': '-120',
+  'station5.1': '-120',
+  'station6.1': '-120',
+  'station7.1': '-120',
+  'station8.1': '-120',
+  'station9.1': '-120',
+  'station10.1': '-120'
+}
+listening on *:3000
+Connected
+Subscribe to topic '/nodejs/mqtt/1,/nodejs/mqtt/2,/nodejs/mqtt/3,/nodejs/mqtt/4,/nodejs/mqtt/5,/nodejs/mqtt/6,/nodejs/mqtt/7,/nodejs/mqtt/8,/nodejs/mqtt/9,/nodejs/mqtt/10,/nodejs/mqtt/1.1,/nodejs/mqtt/2.1,/nodejs/mqtt/3.1,/nodejs/mqtt/4.1,/nodejs/mqtt/5.1,/nodejs/mqtt/6.1,/nodejs/mqtt/7.1,/nodejs/mqtt/8.1,/nodejs/mqtt/9.1,/nodejs/mqtt/10.1'
+In  6
+In  14
+In  13
+In  8
+In  5
+In  2
+In  18
+In  12
+In  16
+In  9
+In  15
+In  10
+In  4
+In  0
+In  17
+In  1
+In  19
+In  3
+In  11
+In  14
+In  13
+In  8
+In  11
+In  2
+In  5
+In  18
+In  16
+In  9
+In  12
+In  10
+In  15
+In  4
+In  0
+In  17
+In  1
+In  19
+In  3
+In  14
+In  13
+In  8
+In  2
+In  18
+In  5
+In  16
+In  12
+In  9
+In  15
+In  10
+In  4
+In  0
+In  11
+In  1
+In  17
+In  19
+In  3
+In  13
+In  14
+In  8
+In  5
+In  18
+In  2
+In  16
+In  9
+In  4
+In  12
+In  15
+In  10
+In  0
+In  11
+In  6
+In  6
+In  6
+In  1
+In  17
+In  19
+In  3
+In  14
+In  13
+In  5
+In  8
+In  18
+In  2
+In  16
+In  12
+In  9
+In  15
+In  4
+In  10
+In  0
+In  1
+In  19
+In  17
+In  3
+In  14
+In  11
+In  13
+In  2
+In  8
+In  18
+In  5
+In  16
+In  12
+In  9
+In  4
+In  15
+In  10
+In  0
+In  1
+In  19
+In  17
+In  3
+In  11
+In  13
+In  14
+In  2
+In  18
+In  8
+In  5
+In  6
+In  12
+In  16
+In  9
+In  4
+In  10
+In  15
+In  0
+In  19
+In  1
+In  17
+In  3
+In  11
+In  14
+In  13
+In  8
+In  2
+In  18
+In  6
+In  5
+In  12
+In  16
+In  9
+In  4
+In  10
+In  0
+In  15
+In  11
+In  17
+In  1
+In  19
+In  3
+In  14
+In  13
+In  8
+In  2
+In  18
+In  5
+In  16
+In  9
+In  12
+In  4
+In  10
+In  15
+In  7
+In  7
+In  7
+In  0
+In  11
+In  1
+In  17
+In  19
+In  3
+In  13
+In  14
+In  2
+In  8
+In  18
+In  5
+In  12
+
+
+Inside OBSERVER !!
+{
+  stationId: 'STATION1',
+  time: '2021-12-14T00:10:48Z',
+  tags: [
+    { tagId: 'e2:3e:a9:07:1d:e0', rssi: -59 },
+    { tagId: 'd7:88:8e:03:c2:b3', rssi: -69 }
+  ]
+}
+
+
+{
+  stationId: 'STATION2',
+  time: '2021-12-14T00:10:48Z',
+  tags: [ { tagId: 'eb:d0:6e:a8:55:b8', rssi: -83 } ]
+}
+
+
+{ stationId: 'STATION3', time: '2021-12-14T00:10:51Z', tags: [] }
+
+
+{ stationId: 'STATION4', time: '2021-12-14T00:10:49Z', tags: [] }
+
+
+{
+  stationId: 'STATION5',
+  time: '2021-12-14T00:10:47Z',
+  tags: [ { tagId: 'f9:43:dc:76:87:40', rssi: -71 } ]
+}
+
+
+{
+  stationId: 'STATION6',
+  time: '2021-12-14T00:10:52Z',
+  tags: [
+    { tagId: 'e0:d4:09:da:e3:0a', rssi: -82 },
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -82 }
+  ]
+}
+
+
+{ stationId: 'STATION7', time: '2021-12-14T00:10:36Z', tags: [] }
+
+
+{
+  stationId: 'STATION8',
+  time: '2021-12-14T00:10:44Z',
+  tags: [
+    { tagId: 'f9:43:dc:76:87:40', rssi: -50 },
+    { tagId: 'eb:d0:6e:a8:55:b8', rssi: -57 }
+  ]
+}
+
+
+{
+  stationId: 'STATION9',
+  time: '2021-12-14T00:10:51Z',
+  tags: [ { tagId: 'eb:d0:6e:a8:55:b8', rssi: -64 } ]
+}
+
+
+{ stationId: 'STATION10', time: '2021-12-14T00:10:47Z', tags: [] }
+
+
+{ stationId: 'STATION1.1', time: '2021-12-14T00:10:47Z', tags: [] }
+
+
+{
+  stationId: 'STATION2.1',
+  time: '2021-12-14T00:10:48Z',
+  tags: [ { tagId: 'eb:d0:6e:a8:55:b8', rssi: -59 } ]
+}
+
+
+{
+  stationId: 'STATION3.1',
+  time: '2021-12-14T00:10:52Z',
+  tags: [
+    { tagId: 'eb:d0:6e:a8:55:b8', rssi: -64 },
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -53 },
+    { tagId: 'e0:d4:09:da:e3:0a', rssi: -55 }
+  ]
+}
+
+
+{
+  stationId: 'STATION4.1',
+  time: '2021-12-14T00:10:51Z',
+  tags: [ { tagId: 'e2:24:f4:21:f6:f5', rssi: -63 } ]
+}
+
+
+{
+  stationId: 'STATION5.1',
+  time: '2021-12-14T00:10:51Z',
+  tags: [
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -69 },
+    { tagId: 'f9:43:dc:76:87:40', rssi: -64 },
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -68 }
+  ]
+}
+
+
+{
+  stationId: 'STATION6.1',
+  time: '2021-12-14T00:10:48Z',
+  tags: [ { tagId: 'eb:d0:6e:a8:55:b8', rssi: -61 } ]
+}
+
+
+{ stationId: 'STATION7.1', time: '2021-12-14T00:10:47Z', tags: [] }
+
+
+{ stationId: 'STATION8.1', time: '2021-12-14T00:10:49Z', tags: [] }
+
+
+{
+  stationId: 'STATION9.1',
+  time: '2021-12-14T00:10:52Z',
+  tags: [
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -56 },
+    { tagId: 'eb:d0:6e:a8:55:b8', rssi: -68 },
+    { tagId: 'dd:07:6f:02:93:cf', rssi: -57 },
+    { tagId: 'f3:7a:4c:4d:f1:6a', rssi: -56 }
+  ]
+}
+
+
+{ stationId: 'STATION10.1', time: '2021-12-14T00:10:49Z', tags: [] }
+
+
+
+
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+TAG GROUPED DATA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  },
+  {
+    station1: -69,
+    station2: -83,
+    station3: '-120',
+    station4: '-120',
+    station5: -71,
+    station6: -82,
+    station7: '-120',
+    station8: -57,
+    station9: -64,
+    station10: '-120',
+    'station1.1': '-120',
+    'station2.1': -59,
+    'station3.1': -55,
+    'station4.1': -63,
+    'station5.1': -68,
+    'station6.1': -61,
+    'station7.1': '-120',
+    'station8.1': '-120',
+    'station9.1': -56,
+    'station10.1': '-120'
+  }
+]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In  16
+In  9
+In  4
+In  10
+In  11
+In  0
+In  7
+In  15
+In  1
+In  17
+In  19
+In  3
+In  7
+In  13
+In  2
+In  8
+In  14
+In  18
+In  5
+In  12
+In  9
+In  16
+In  4
+^C
+pi@raspberrypi:~/Desktop/loom-rx/rx-test-backend/rx-loom-backend/src $ ^C
+pi@raspberrypi:~/Desktop/loom-rx/rx-test-backend/rx-loom-backend/src $ 

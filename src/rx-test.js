@@ -50,7 +50,7 @@ const int3 = setInterval(() => {
 // let result = observables[2].pipe(withLatestFrom(observables[1]));
 // result = observables[3].pipe(withLatestFrom(result));
 a = combineLatest([observables[2], observables[1], observables[3]])
-b = interval(10000);
+b = interval(3000);
 result = b.pipe(withLatestFrom(a));
 let subscription = result.subscribe(observer);
 

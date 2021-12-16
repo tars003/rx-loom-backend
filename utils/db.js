@@ -7,7 +7,7 @@ const dbUrl = process.env.ENVIRONMENT == 'DEV' ? process.env.MONGO_URI : url;
 const connectDB = () => {
     console.log(process.env.ENVIRONMENT);
     console.log(dbUrl);
-    mongoose
+    return mongoose
         .connect(dbUrl, {
             useNewUrlParser: true,
             useUnifiedTopology: true,

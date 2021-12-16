@@ -1,4 +1,4 @@
-const { Observable, interval, withLatestFrom, combineLatest } = require("rxjs");
+const { Observable, interval, withLatestFrom, combineLatest, ConnectableObservable } = require("rxjs");
 const express = require('express');
 const http = require('http');
 const app = express();
@@ -14,12 +14,15 @@ const { stationTagMap, tagObj } = require('../utils/constants');
 
 var mqtt = require('mqtt');
 const { reportLiveStatus } = require("../utils/esp32.util");
+const { copyFileSync } = require("fs");
 
 // MQTT CLIENT CONFIG
-const host = '192.168.1.102'
+const host = '127.0.0.1'
 const port = '1883'
 const clientId = `mqtt_${Math.random().toString(16).slice(3)}`;
 const connectUrl = `mqtt://${host}:${port}`
+
+console.log('tagObj', tagObj);
 
 const client = mqtt.connect(connectUrl, {
     clientId,
@@ -56,7 +59,7 @@ const topics = [
 client.on('connect', () => {
     console.log('Connected')
     client.subscribe(topics, () => {
-        console.log(`Subscribe to topic '${mainTopic}'`)
+        console.log(`Subscribe to topic '${topics}'`)
     })
 });
 
@@ -68,53 +71,100 @@ var observer;
 
 var stations, zones;
 
-(async () => {
-    // CREATING 20 OBSERVABLES FOR 20 STATIONS
-    stations = await Station.find();
-    for (let i = 0; i < stations.length; i++) {
-        observables[i] = Observable.create((obs) => {
-            obsFunctions[i] = (data) => {
-                console.log('Inside Observable 1');
-                obs.next(data);
-            }
+// (async () => {
+//     // CREATING 20 OBSERVABLES FOR 20 STATIONS
+//     // stations = await Station.find();
+//     for (let i = 0; i < 20; i++) {
+//         observables[i] = Observable.create((obs) => {
+//             obsFunctions[i] = (data) => {
+//                 console.log('Inside Observable 1');
+//                 obs.next(data);
+//             }
+//         })
+//     }
+// })();
+
+for (let i = 0; i < 20; i++) {
+    observables[i] = Observable.create((obs) => {
+        obsFunctions[i] = (data) => {
+            console.log(`In  ${i}`);
+            obs.next(data);
+        }
+    })
+}
+
+console.log('obs functoions', obsFunctions);
+console.log('obs functoions len', obsFunctions.length);
+
+console.log('observables', observables);
+console.log('observable len', observables.length);
+
+// observer = {
+//     next: (value) => {
+//         console.log("Inside OBSERVER !!");
+//         console.log(value);
+//         const tagObjs = processResult(value);
+
+//     },
+//     error: (err) => {
+//         console.log('Inside err function !!');
+//         console.log(err);
+//     }
+// }
+
+observer = {
+    next: (value) => {
+        console.log();
+        console.log();
+        console.log("Inside OBSERVER !!");
+        // console.log(value);
+        value[1].map(data => {
+            console.log(data);
+            console.log();
+            console.log()
         })
+        console.log();
+        console.log();
+        const tagObjs = processResult(value[1]);
+
+    },
+    error: (err) => {
+        console.log('Inside err function !!');
+        console.log(err);
     }
-})();
+}
 
 // CREATING OBSERVER AND RESULTANT OBSERVABLE
-(async () => {
-    // CREATING 1 OBSERVER FOR GETTING 20 DATA FROM 20 STATIONS
-    observer = {
-        next: (value) => {
-            console.log("Inside OBSERVER !!");
-            console.log(value);
-            const tagObjs = processResult(value);
+// (async () => {
+//     // CREATING 1 OBSERVER FOR GETTING 20 DATA FROM 20 STATIONS
+    
+//     observer = {
+//         next: (value) => {
+//             console.log();
+//             console.log();
+//             console.log("Inside OBSERVER !!");
+//             console.log(value);
+//             console.log();
+//             console.log();
+//             const tagObjs = processResult(value);
 
-        },
-        error: (err) => {
-            console.log('Inside err function !!');
-            console.log(err);
-        }
-    }
+//         },
+//         error: (err) => {
+//             console.log('Inside err function !!');
+//             console.log(err);
+//         }
+//     }
 
-    // for (let i = 1; i < stations.length; i++) {
-    //     if (i == 1)
-    //         resultObservable = observables[i].pipe(withLatestFrom(observables[i - 1]));
-    //     else
-    //         resultObservable = observables[i].pipe(withLatestFrom(resultObservable));
-    // }
-
-    // subscription = resultObservable.subscribe(observer);
-
-})();
+// })();
 
 
 client.on('message', async (topic, payload) => {
     let inStr = [...payload.toString()].map(w => { if (w == "'") return ("\""); else return (w) }).join("");
     const data = JSON.parse(inStr);
-    console.log('data', data);
+    // console.log('data', data);
+    // console.log('topic', data);
 
-    if (data.tags.length > 0) {
+    if (data.tags) {
 
         for (let i = 0; i < topics.length; i++) {
             if(topic == topics[i]) {
@@ -123,36 +173,15 @@ client.on('message', async (topic, payload) => {
             }
         }
 
-        // switch (topic) {
-        //     case topics[0]:
-        //         obsFunctions[0](data);
-        //         break;
-        //     case topics[1]:
-        //         obsFunctions[1](data);
-        //         break;
-        //     case topics[2]:
-        //         obsFunctions[2](data);
-        //         break;
-        //     case topics[3]:
-        //         obsFunctions[3](data);
-        //         break;
-        //     case topics[4]:
-        //         obsFunctions[4](data);
-        //         break;
-        //     case topics[5]:
-        //         obsFunctions[5](data);
-        //         break;
-        // }
-
     } else {
-        console.log(`no tags found by station  :${stationId}`);
+        console.log(`no tags found by station  :${data.stationId}`);
     }
 
 });
 
 let combinedObs = combineLatest(observables);
-let intObs = interval(20000);
-let resultObs = interval.pipe(withLatestFrom(combinedObs));
+let intObs = interval(10000);
+let resultObs = intObs.pipe(withLatestFrom(combinedObs));
 let subscription = resultObs.subscribe(observer);
 
 
@@ -162,21 +191,42 @@ let subscription = resultObs.subscribe(observer);
 const processResult = async (obsArray) => {
     let tagObjs = [];                           // STORES 20 OBJECTS FOR EACH TAG, TO BE SENT TO FLASK API
     const tagIds = Object.values(stationTagMap);
-    
+
+    // console.log('tagids', tagIds);
+
+    // console.log('inside processResult', obsArray);    
     // CONSTRUCTING EMPTY TAG OBJS
-    for (let i = 0; i < stationTagMap.length; i++) {
-        tagObjs[i] = tagObj;
+    for (let i = 0; i < tagIds.length; i++) {
+        tagObjs.push(tagObj);
+        
     }
 
-    for (let i = 0; i < obsArray; i++) {
+    // console.log(tagObjs)
+
+    for (let i = 0; i < obsArray.length; i++) {
         const obsData = obsArray[i];
-        obsData['tags'].map(tag => {
-            tagObjs[tagIds.indexOf(tag["tagId"])][obsData['stationId']] = tag['rssi'];
+
+        // console.log('-----------------------------------------------');
+        // console.log(obsData);
+        // console.log();
+        
+        obsData['tags'].map((tag) => {
+            // console.log('tagId', tag["tagId"]);
+            // console.log( 'index', tagIds.indexOf(tag["tagId"]))
+            const tagIndex = tagIds.indexOf(tag["tagId"]);
+            if(tagIndex >= 0) {
+                tagObjs[tagIndex][obsData['stationId'].toLowerCase()] = tag['rssi'];
+                console.log(tagObjs[tagIndex][obsData['stationId']] );
+            }
+            
         });
+
+        // console.log('-----------------------------------------------');
     }
 
     console.log('TAG GROUPED DATA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
     console.log(tagObjs);
+    console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 
     // let apiRequests = [];
     // for (let i = 0; i < tagObjs.length; i++) {

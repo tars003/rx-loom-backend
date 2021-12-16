@@ -1,0 +1,1041 @@
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId f3:7a:4c:4d:f1:6a
+index 1
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION8',
+  time: '2021-12-13T23:54:04Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION9',
+  time: '2021-12-13T23:54:02Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -53 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -55 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -56 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -55 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -53 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -56 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -53 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -53 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -53 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -56 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -53 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -52 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -56 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -53 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION10',
+  time: '2021-12-13T23:54:04Z',
+  tags: [
+    { tagId: 'eb:d0:6e:a8:55:b8', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -35 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -35 },
+    { tagId: 'f9:43:dc:76:87:40', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -34 }
+  ]
+}
+
+tagId eb:d0:6e:a8:55:b8
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId f9:43:dc:76:87:40
+index 3
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------``
+-----------------------------------------------
+{
+  stationId: 'STATION1.1',
+  time: '2021-12-13T23:54:03Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: 'e0:d4:09:da:e3:0a', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -38 },
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -54 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -38 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -38 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -40 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -38 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -40 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -38 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -40 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -37 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -38 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId e0:d4:09:da:e3:0a
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId e2:24:f4:21:f6:f5
+index 0
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION2.1',
+  time: '2021-12-13T23:54:01Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -43 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -49 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -48 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -49 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -48 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -49 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: 'd7:88:8e:03:c2:b3', rssi: -55 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -49 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -49 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -39 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -48 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -48 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -49 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -48 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -47 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId d7:88:8e:03:c2:b3
+index 6
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId e2:24:f4:21:f6:f5
+index 0
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION3.1',
+  time: '2021-12-13T23:54:03Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -62 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: 'eb:d0:6e:a8:55:b8', rssi: -62 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -64 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -69 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -69 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -62 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -69 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -63 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -69 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId eb:d0:6e:a8:55:b8
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION4.1',
+  time: '2021-12-13T23:54:02Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: 'eb:d0:6e:a8:55:b8', rssi: -71 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -71 },
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -65 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -77 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -71 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -71 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -66 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId eb:d0:6e:a8:55:b8
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId e2:24:f4:21:f6:f5
+index 0
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION5.1',
+  time: '2021-12-13T23:54:02Z',
+  tags: [
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -66 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -69 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -76 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -71 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -76 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -71 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -71 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -69 }
+  ]
+}
+
+tagId e2:24:f4:21:f6:f5
+index 0
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION6.1',
+  time: '2021-12-13T23:54:02Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -80 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -77 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: 'e2:3e:a9:07:1d:e0', rssi: -54 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -71 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -79 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -77 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -79 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -74 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId e2:3e:a9:07:1d:e0
+index 2
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION7.1',
+  time: '2021-12-13T23:54:02Z',
+  tags: [
+    { tagId: 'e2:24:f4:21:f6:f5', rssi: -70 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -75 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -85 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -68 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -76 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -82 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -76 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -87 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -67 }
+  ]
+}
+
+tagId e2:24:f4:21:f6:f5
+index 0
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION8.1',
+  time: '2021-12-13T23:54:03Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -58 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -58 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: 'd7:88:8e:03:c2:b3', rssi: -47 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -57 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -58 },
+    { tagId: 'f9:43:dc:76:87:40', rssi: -39 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId d7:88:8e:03:c2:b3
+index 6
+undefined
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId f9:43:dc:76:87:40
+index 3
+undefined
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION9.1',
+  time: '2021-12-13T23:54:03Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -63 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 },
+    { tagId: 'e0:d4:09:da:e3:0a', rssi: -59 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -63 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -72 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -63 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -64 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -73 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -63 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -73 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -63 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId e0:d4:09:da:e3:0a
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+-----------------------------------------------
+-----------------------------------------------
+{
+  stationId: 'STATION10.1',
+  time: '2021-12-13T23:54:04Z',
+  tags: [
+    { tagId: '63:c1:97:d4:cd:11', rssi: -62 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -59 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -62 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -60 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -61 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -62 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -59 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -65 },
+    { tagId: '63:c1:97:d4:cd:11', rssi: -62 },
+    { tagId: 'd7:88:8e:03:c2:b3', rssi: -75 }
+  ]
+}
+
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId 63:c1:97:d4:cd:11
+index -1
+tagId d7:88:8e:03:c2:b3
+index 6
+undefined
+-----------------------------------------------
+TAG GROUPED DATA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  },
+  {
+    station1: -59,
+    station2: -72,
+    station3: -55,
+    station4: -59,
+    station5: -74,
+    station6: -80,
+    station7: -65,
+    station8: -55,
+    station9: -74,
+    station10: -57,
+    'station1.1': -54,
+    'station2.1': -39,
+    'station3.1': -66,
+    'station4.1': -65,
+    'station5.1': -66,
+    'station6.1': -54,
+    'station7.1': -70,
+    'station8.1': -39,
+    'station9.1': '-120',
+    'station10.1': -75
+  }
+]
+Inside Observable 4
+Inside Observable 2
+Inside Observable 16
+Inside Observable 11
+Inside Observable 5
+Inside Observable 8
+Inside Observable 13
+Inside Observable 18
+Inside Observable 12
+Inside Observable 14
+Inside Observable 15
+Inside Observable 10
+Inside Observable 1
+Inside Observable 17
+Inside Observable 19
+Inside Observable 9
+Inside Observable 0
+Inside Observable 7
+Inside Observable 3
+^C
+pi@raspberrypi:~/Desktop/loom-rx/rx-test-backend/rx-loom-backend/src $ ^C
+pi@raspberrypi:~/Desktop/loom-rx/rx-test-backend/rx-loom-backend/src $ ^C
+pi@raspberrypi:~/Desktop/loom-rx/rx-test-backend/rx-loom-backend/src $ 

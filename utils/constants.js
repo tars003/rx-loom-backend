@@ -8,18 +8,8 @@ const stationTagMap = {
     'STATION6': 'ff:7b:dc:aa:7a:11',
     'STATION7': 'd7:88:8e:03:c2:b3',
     'STATION8': 'dd:07:6f:02:93:cf',
-    'STATION9': 'TAG9',
-    'STATION10': 'TAG10',
-    'STATION1.1': 'TAG ID',
-    'STATION2.1': 'TAG ID',
-    'STATION3.1': 'TAG ID',
-    'STATION4.1': 'TAG ID',
-    'STATION5.1': 'TAG ID',
-    'STATION6.1': 'TAG ID',
-    'STATION7.1': 'TAG ID',
-    'STATION8.1': 'TAG ID',
-    'STATION9.1': 'TAG9',
-    'STATION10.1': 'TAG10',
+    'STATION9': 'eb:d0:6e:a8:55:b8',
+    'STATION10': 'e0:d4:09:da:e3:0a'
 };
 
 const tagObj = {
