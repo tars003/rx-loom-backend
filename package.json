@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon ./src/test.js",
+    "mqtt": "nodemon ./src/main.js",
+    "http": "nodemon ./src/http-main.js",
     "dev": "nodemon ./src/server.js"
   },
   "keywords": [],
@@ -22,6 +23,7 @@
     "express": "^4.17.1",
     "moment": "^2.29.1",
     "mongoose": "^6.0.15",
-    "mqtt": "^4.2.8"
+    "mqtt": "^4.2.8",
+    "socket.io": "^4.4.0"
   }
 }

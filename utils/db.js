@@ -4,7 +4,7 @@ const url = `mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWOR
 
 const dbUrl = process.env.ENVIRONMENT == 'DEV' ? process.env.MONGO_URI : url;
 
-const connectDB = () => {
+const connectDB = async () => {
     console.log(process.env.ENVIRONMENT);
     console.log(dbUrl);
     return mongoose

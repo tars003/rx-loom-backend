@@ -1,7 +1,9 @@
 const { Observable, interval, withLatestFrom } = require("rxjs");
+const moment = require('moment');
 const express = require('express');
 const http = require('http');
 const app = express();
+const {findRunningShift} = require('../utils/shift.util');
 const server = http.createServer(app);
 require("dotenv").config();
 const { Server } = require("socket.io");
@@ -37,6 +39,9 @@ var results = [];
 var subscriptions = [];
 var obsFunctions = [];
 
+const getDateTime = () => {
+    return moment().format('DD-MM-YY HH:mm:ss');
+}
 
 /****************************************** CONNECTING TO MQTT SERVER AND SUBSCRIBING TO TOPICS  ***************************/
 
@@ -124,7 +129,7 @@ for (let i = 0; i < stations.length; i++) {
     stationMachineMap[i] = [ machine1Index, machine2Index ];
     observables[i] = Observable.create((obs) => {
         obsFunctions[i] = (data) => {
-            // console.log(`In  ${i}`);
+            console.log(`In  ${i}`);
             obs.next(data);
         }
     })
@@ -146,8 +151,8 @@ for (let i = 0; i < zones.length; i++) {
 
     observers[i] = {
         next: (value) => {
-            // console.log(`In Observer ${i}`);
-            // console.log(value);
+            console.log(`In Observer ${i}`);
+            console.log(value);
             
             processResult(value, i);
         },
@@ -244,14 +249,18 @@ const processResult = async (obsArray, i) => {
         let isEmpDetected2 = false;
         obs1["tags"].map(ele => {
             if (ele['tagId'] == tagId) {
-                isEmpDetected1 = true;
                 rssi1 = ele['rssi'];
+                if (parseInt(rssi1) > -75) {
+                    isEmpDetected1 = true;
+                }
             }
         });
         obs2["tags"].map(ele => {
             if (ele['tagId'] == tagId) {
-                isEmpDetected2 = true;
                 rssi2 = ele['rssi'];
+                if (parseInt(rssi2) > -75) {
+                    isEmpDetected2 = true;
+                }
             }
         });
 
@@ -265,13 +274,15 @@ const processResult = async (obsArray, i) => {
             currStopTime: currStopTime
         }
 
-        // EMP DETECTED IN BOTH SUB STATIONS
-        if (isEmpDetected1 || isEmpDetected2) {
+        // console.log('sending data to esp32.util', data);
+        const runningShift = await reportLiveStatus(data);
+        updateDash(runningShift);
 
-            // console.log('sending data to esp32.util', data);
-            const runningShift = await reportLiveStatus(data);
-            updateDash(runningShift);
-        }
+        // // EMP DETECTED IN BOTH SUB STATIONS
+        // if (isEmpDetected1 || isEmpDetected2) {
+
+            
+        // }
 
         // // EMP NOT DETECTED IN BOTH SUB STATIONS, THUS NOT DETECTED IN ZONE
         // else if (isEmpDetected1 || isEmpDetected2) {
@@ -279,10 +290,10 @@ const processResult = async (obsArray, i) => {
         //     // console.log(`${obs1['stationId']} : ${isEmpDetected1},${obs2['stationId']} : ${isEmpDetected2}`);
         //     // console.log('data object : ', data);
         // }
-        else {
-            // console.log(`Employee ${zone['tagId']} not present in either of stations`);
-            // console.log('data object : ', data);
-        }
+        // else {
+        //     // console.log(`Employee ${zone['tagId']} not present in either of stations`);
+        //     // console.log('data object : ', data);
+        // }
     }
 
 }

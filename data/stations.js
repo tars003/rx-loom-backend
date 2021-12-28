@@ -37,7 +37,7 @@ const stations = [{
   "id": "61b876f1bb96432b6a748c7f",
   "name": "STATION4.1",
   "machine1": "MACHINE15",
-  "machine2": "MACHINE16"
+  "machine2": "MACHINE16    "
 },{
   "id": "61b87709bb96432b6a748c80",
   "name": "STATION5",
@@ -47,7 +47,7 @@ const stations = [{
   "id": "61b87717bb96432b6a748c81",
   "name": "STATION6",
   "machine1": "MACHINE21",
-  "machine2": "MACHINE22"
+  "machine2": "MACHINE22   "
 },{
   "id": "61b87735bb96432b6a748c82",
   "name": "STATION6.1",
